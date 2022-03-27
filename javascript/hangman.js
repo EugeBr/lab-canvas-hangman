@@ -79,15 +79,15 @@ document.addEventListener('keydown', event => {
   // React to user pressing a key
   // ... your code goes here
   const letter = event.key;
-   console.log(letter);
+  // console.log(letter);
     if (hangman.letters.includes(letter)) {
       console.log("you already tried that letter!");
     } 
     if (hangman.secretWord.includes(letter)) {
-      console.log("correct letter!")
+      console.log("correct letter!");
       hangman.addCorrectLetter(letter);
       const letterIndex = hangman.secretWord.indexOf(letter);
-      console.log(letterIndex);
+     // console.log(letterIndex);
       hangmanCanvas.writeCorrectLetter(letterIndex);
     }
     else {
